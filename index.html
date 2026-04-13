@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Restaurant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Javascriptcode.js" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar__wrapper">
+    <div class="container navbar__container">
+      <a class="navbar__logo" href="#">
+        <span class="navbar__logo-icon"><i class="fa-solid fa-utensils"></i></span>
+        <span class="navbar__logo-text">Foodie</span>
+      </a>
+
+      <button class="navbar-toggler navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto navbar__nav">
+          <li class="nav-item"><a class="nav-link navbar__link navbar__link--active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link navbar__link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link navbar__link" href="#">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link navbar__link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link navbar__link" href="#">about us</a></li>
+          <li class="nav-item"><a class="nav-link navbar__link" href="#">Blog</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button class="navbar__icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="navbar__icon-btn navbar__icon-btn--cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="navbar__cart-badge" id="cartCount">0</span>
+          </button>
+          <button class="navbar__icon-btn"><i class="fa-regular fa-heart"></i></button>
+          <a href="#" class="btn navbar__login-btn">Log in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero__container">
+      <!-- Floating decorative elements -->
+      <img src="https://www.pngall.com/wp-content/uploads/5/Pizza-PNG-File.png" class="hero__deco hero__deco--pizza" alt="" />
+      <img src="https://www.pngall.com/wp-content/uploads/2/Basil-Herb-PNG.png" class="hero__deco hero__deco--leaf-top" alt="" />
+      <img src="https://www.pngall.com/wp-content/uploads/2/Basil-Herb-PNG.png" class="hero__deco hero__deco--leaf-bottom" alt="" />
+      <img src="https://www.pngall.com/wp-content/uploads/2/Tomato-PNG-Free-Download.png" class="hero__deco hero__deco--tomato" alt="" />
+      <img src="https://www.pngall.com/wp-content/uploads/2/Red-Onion-PNG.png" class="hero__deco hero__deco--onion" alt="" />
+      <img src="https://www.pngall.com/wp-content/uploads/2/Soup-PNG.png" class="hero__deco hero__deco--soup" alt="" />
+
+      <div class="row align-items-center hero__row">
+        <!-- LEFT -->
+        <div class="col-lg-6 hero__left">
+          <p class="hero__subtitle">Welcome to</p>
+          <h1 class="hero__heading">
+            Foodie Restaurant<br />
+            and Enjoy <span class="hero__highlight">The Food</span>
+          </h1>
+          <p class="hero__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            convallis ante ante, ut tempor neque bibendum non. Ut enim lacus, auctor
+            nec convallis sed, vehicula ut eros.
+          </p>
+          <div class="hero__cta">
+            <button class="btn hero__btn-primary">Reserve a Table</button>
+            <button class="btn hero__btn-secondary">Online Order</button>
+          </div>
+          <div class="hero__hours">
+            <span class="hero__hours-icon"><i class="fa-regular fa-clock"></i></span>
+            <span class="hero__hours-text">Open: 11:00am–11.00pm</span>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-lg-6 hero__right">
+          <div class="hero__image-wrapper">
+            <div class="hero__dashed-ring"></div>
+            <div class="hero__image-circle">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80"
+                alt="Best Food"
+                class="hero__food-img"
+              />
+            </div>
+            <div class="hero__best-badge">
+              Best Food <span>🍔</span>
+            </div>
+            <!-- Floating card -->
+            <div class="hero__float-card">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=80&q=80"
+                alt="Salman Salad"
+                class="hero__float-card-img"
+              />
+              <div class="hero__float-card-body">
+                <p class="hero__float-card-name">Salman Salad</p>
+                <div class="hero__float-card-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="hero__float-card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="hero__float-card-price">$12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR DISHES ===== -->
+  <section class="dishes" id="menu">
+    <div class="container dishes__container">
+
+      <div class="dishes__header">
+        <h2 class="dishes__title">Our Popular <span class="dishes__title-highlight">Dishes</span></h2>
+        <div class="dishes__nav-btns">
+          <button class="dishes__nav-btn" id="prevBtn" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="dishes__nav-btn dishes__nav-btn--active" id="nextBtn" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="dishes__viewport" id="dishesViewport">
+        <div class="dishes__track" id="dishesTrack">
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(5.6k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&auto=format&fit=crop" alt="Chinese Noodles Pasta" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Chinese noodles Pasta</h3>
+                <p class="dish-card__price">$20.00</p>
+                <p class="dish-card__desc">Crispy golden noodles tossed in savory soy-ginger sauce with fresh vegetables.</p>
+                <button class="dish-card__btn" data-name="Chinese noodles Pasta">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(5.6k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&auto=format&fit=crop" alt="Vegetable Chowmein" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Vegetable Chowmein</h3>
+                <p class="dish-card__price">$20.00</p>
+                <p class="dish-card__desc">Stir-fried noodles loaded with colorful fresh vegetables and umami-rich sauce.</p>
+                <button class="dish-card__btn" data-name="Vegetable Chowmein">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(5.6k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&auto=format&fit=crop" alt="Pasta al pomodoro" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Pasta al pomodoro</h3>
+                <p class="dish-card__price">$20.00</p>
+                <p class="dish-card__desc">Classic Italian pasta with rich sun-ripened tomato sauce and fragrant basil.</p>
+                <button class="dish-card__btn" data-name="Pasta al pomodoro">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(5.6k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&auto=format&fit=crop" alt="Rice and curry" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Rice and curry</h3>
+                <p class="dish-card__price">$20.00</p>
+                <p class="dish-card__desc">Aromatic basmati rice served with rich golden curry and fragrant spices.</p>
+                <button class="dish-card__btn" data-name="Rice and curry">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(4.8k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&auto=format&fit=crop" alt="Garden Salad" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Garden Fresh Salad</h3>
+                <p class="dish-card__price">$15.00</p>
+                <p class="dish-card__desc">Crisp greens, cherry tomatoes, and a zesty lemon herb vinaigrette dressing.</p>
+                <button class="dish-card__btn" data-name="Garden Fresh Salad">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(6.1k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&auto=format&fit=crop" alt="Margherita Pizza" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Margherita Pizza</h3>
+                <p class="dish-card__price">$22.00</p>
+                <p class="dish-card__desc">Stone-baked crust with fresh mozzarella, tomato base and fragrant basil leaves.</p>
+                <button class="dish-card__btn" data-name="Margherita Pizza">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(3.9k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400&auto=format&fit=crop" alt="Grilled Burger" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Grilled Beef Burger</h3>
+                <p class="dish-card__price">$18.00</p>
+                <p class="dish-card__desc">Juicy charcoal-grilled patty with caramelized onions, cheese and smoky sauce.</p>
+                <button class="dish-card__btn" data-name="Grilled Beef Burger">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dishes__slide">
+            <div class="dish-card">
+              <div class="dish-card__top">
+                <span class="dish-card__badge"><span>(4.3k)</span> <i class="fa-solid fa-star"></i></span>
+                <div class="dish-card__circle">
+                  <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&auto=format&fit=crop" alt="Butter Chicken" />
+                </div>
+              </div>
+              <div class="dish-card__body">
+                <h3 class="dish-card__name">Butter Chicken</h3>
+                <p class="dish-card__price">$24.00</p>
+                <p class="dish-card__desc">Tender chicken in a velvety tomato-cream sauce with aromatic Indian spices.</p>
+                <button class="dish-card__btn" data-name="Butter Chicken">
+                  <i class="fa-solid fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+      </div><!-- /viewport -->
+
+      <div class="dishes__dots" id="dishesDots"></div>
+
+    </div>
+  </section>
+
+  <canvas id="bgCanvas"></canvas>
+
+<!-- Decorative Shapes -->
+<div class="bg-shapes">
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<div class="content">
+  <h1>Foodie Restaurant</h1>
+</div>
+
+  <!-- ===== TOAST NOTIFICATION ===== -->
+  <div class="toast__wrapper" id="toastWrapper">
+    <div class="toast__box" id="toastBox">
+      <i class="fa-solid fa-circle-check toast__icon"></i>
+      <span class="toast__msg" id="toastMsg">Item added to cart!</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
